@@ -3,17 +3,21 @@
   "version": "1.0.0",
   "description": "live app here",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "keywords": [],
   "author": "nitin kumar",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
     "parcel": "^2.10.0",
     "process": "^0.11.10"
   },
   "dependencies": {
-    "browserslist": "^4.22.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }

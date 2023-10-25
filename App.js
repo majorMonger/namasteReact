@@ -1,18 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-const heading1 = React.createElement("h1", {
-    id:"title",
-    // style:"Animation",
-    // className:"class",
-}, ("Hello Guy's 1"));
 
-const heading2 = React.createElement("h2", {
-    id:"title",
-    
-}, ("Hello Guy's 2"));
-const container = React.createElement("div", {id:"container"}, [heading1, heading2]);
+const Title = () => (
+    <a href='./'>
+    <img
+   className = 'logo'
+   src="https://play-lh.googleusercontent.com/A8jF58KO1y2uHPBUaaHbs9zSvPHoS1FrMdrg8jooV9ftDidkOhnKNWacfPhjKae1IA" 
+   alt="Swiggy"  /> 
+   </a>
+);
+
+
+const HeaderComponent = () => {
+    return(
+        <div className="header">
+            <Title/>
+            <div className="nav-items">
+            <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Cart</li>
+
+
+    </ul>
+    </div>
+                  
+    </div>
+    )
+}
+
+const container = React.createElement("div", {id:"container"}, []);
 const root =  ReactDOM.createRoot(document.getElementById("root"));
 
-// passing a react element inside te root
-root.render(container);
+
+root.render(<HeaderComponent/>);
